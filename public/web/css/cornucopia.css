@@ -1,0 +1,1181 @@
+/* common style */
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/* site style */
+body {
+    background: #0C0C0C;
+    color: #000;
+    font-size: 12px;
+    min-width: 1000px;
+}
+.zh-cn body {
+    font-family: STHeiti,"Microsoft YaHei", "微软雅黑", "SimSun", "宋体",arial;
+}
+.zh-tw body {
+    font-family: "Microsoft JhengHei","微軟正黑體",arial,helvetica,sans-serif;
+}
+#page-container {
+    padding: 10px 0;
+}
+.first #page-container {
+    padding: 0;
+    background: #121212 url('/cl/tpl/cornucopia/ver5/image/first_container_block01.jpg') 50% 100% no-repeat;
+}
+.game #page-container {
+    padding-bottom: 70px;
+    background: url('/cl/tpl/cornucopia/ver5/image/casino_container_bg.jpg') 50% 0 no-repeat;
+}
+.livetop #page-container {
+    background: url('/cl/tpl/cornucopia/ver5/image/live_container_bg.jpg') 50% 0 no-repeat;
+}
+.ball #page-container {
+    background: url('/cl/tpl/cornucopia/ver5/image/sports_container_bg.jpg') 50% 0 no-repeat;
+}
+.ltlottery #page-container {
+    background: url('/cl/tpl/cornucopia/ver5/image/lottery_container_bg.jpg') 50% 0 no-repeat;
+}
+.madvertis #page-container {
+    background: url('/cl/tpl/cornucopia/ver5/image/page_container_bg.jpg') 50% 0 no-repeat;
+}
+.memberexclusiveii #page-container {
+    background: url('/cl/tpl/cornucopia/ver5/image/promotions_container_bg.jpg') 50% 0 no-repeat;
+}
+#page-body {
+    width: 1000px;
+    margin: 0 auto;
+}
+.first #page-body {
+    width: auto;
+}
+.livetop #page-body,
+.ball #page-body,
+.ltlottery #page-body {
+    width: 998px;
+    border: 1px solid #1E1E1E;
+    background-color: #060303;
+}
+.livetop #page-body {
+    padding-top: 17px;
+}
+.ball #page-body {
+    padding: 10px 0;
+}
+
+/* header */
+#page-header {
+    position: relative;
+    height: 200px;
+}
+.first #page-header {
+    height: 106px;
+}
+.header {
+    background: url('/cl/tpl/cornucopia/ver5/image/page_header_bg_x.png') 0 0 repeat-x;
+}
+.first .header {
+    background: url('/cl/tpl/cornucopia/ver5/image/first_header_bg_x.png') 0 0 repeat-x;
+}
+.fixed .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1000px;
+    height: 160px;
+    z-index: 100;
+    background: url('/cl/tpl/cornucopia/ver5/image/page_header_bg_x.png') 0 0 repeat-x;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.7);
+}
+.header-wrap {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.header-logo {
+    position: absolute;
+    z-index: 2;
+    width: 176px;
+    height: 157px;
+    padding: 0 2px;
+    background: url('/cl/tpl/cornucopia/ver5/image/logo_bg.png') 50% 0 no-repeat;
+}
+.header-top-wrap {
+    width: 820px;
+    margin-left: 180px;
+}
+.header-top {
+    height: 34px;
+    overflow: hidden;
+}
+.top-link-wrap {
+    float: left;
+    max-width: 708px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 40px;
+    color: #949494;
+}
+.top-link-wrap a {
+    padding: 0 5px;
+    color: inherit;
+    text-decoration: none;
+}
+.top-custom-link:hover {
+    color: #D9A300 !important;
+}
+.top-link-wrap span {
+    padding: 0 7px;
+    color: #434343;
+}
+.lang-wrap {
+    float: right;
+    margin-top: 8px;
+}
+
+/* 導覽列 */
+.mainnav-placeholder {
+    height: 160px;
+}
+.mainnav-wrap {
+    margin-left: 14px;
+}
+.ele-navbar-wrap {
+    height: 72px;
+}
+.ele-navbar-wrap li {
+    float: left;
+    width: 90px;
+    height: 72px;
+    margin-left: 10px;
+}
+.ele-navbar-wrap ul a {
+    display: block;
+    text-decoration: none;
+}
+.ele-navbar-wrap ul a .ele-nav-title {
+    display: block;
+    margin: 17px 0 4px;
+    padding: 0 4px;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+}
+.ele-navbar-wrap ul a.current .ele-nav-title,
+.ele-navbar-wrap ul a:hover .ele-nav-title {
+    color: #FFF032 !important;
+}
+.ele-navbar-wrap ul a .ele-nav-subtitle {
+    display: block;
+    padding: 0 4px;
+    color: #523838;
+    text-align: center;
+}
+.ele-navbar-wrap ul a.current .ele-nav-subtitle,
+.ele-navbar-wrap ul a:hover .ele-nav-subtitle {
+    color: #FFF032 !important;
+}
+.ele-navbar-wrap .ele-nav-hot {
+    left: 80px;
+    bottom: 44px;
+}
+.ele-navbar-wrap .ele-sidemenu-group,
+.ele-navbar-wrap li.ele-more-nav {
+    display: none;
+}
+.en .ele-navbar-wrap ul a .ele-nav-title {
+    line-height: 72px;
+    margin: 0;
+}
+.en .ele-navbar-wrap ul a .ele-nav-subtitle {
+    display: none;
+}
+/* 下拉子選單 */
+.ele-subnav-group:before,
+.ele-more-wrap:before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 5px;
+    margin: 0 auto;
+    background: url('/cl/tpl/cornucopia/ver5/image/sub_toparrow.png') 50% 0 no-repeat;
+}
+.ele-subnav-wrap,
+.ele-more-wrap ul {
+    border: 2px solid #FFD053;
+}
+.ele-subnav-group a,
+.ele-more-wrap a {
+    display: block;
+    width: 106px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 4px;
+    border-bottom: 1px dotted #3A3A3A;
+    background: url('/cl/tpl/cornucopia/ver5/image/sub_bg.png') 0 0 repeat;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+.ele-subnav-group a:hover,
+.ele-more-wrap a:hover {
+    color: #FFF000;
+}
+
+/* 首頁登入區 */
+.login-position {
+    position: absolute;
+    top: 290px;
+    width: 100%;
+    min-width: 1000px;
+}
+.login-container {
+    width: 1000px;
+    height: 393px;
+    margin: 0 auto;
+}
+.login-wrap {
+    position: relative;
+    float: right;
+    z-index: 2;
+    width: 262px;
+    height: 335px;
+    background: rgba(0,0,0,.5);
+    border-radius: 6px;
+}
+.login-title {
+    width: 80px;
+    height: 20px;
+    margin: 33px auto 20px;
+}
+.login-wrap .login-unit {
+    position: relative;
+    display: block;
+    width: 211px;
+    height: 35px;
+    margin: 0 auto 10px;
+}
+.login-wrap .login-input {
+    width: 209px;
+    height: 33px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-indent: 25px;
+    outline: none;
+}
+.login-wrap .login-input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+}
+.login-wrap .login-input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+.login-wrap .login-input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+.login-wrap .login-input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+}
+.login-wrap .login-unit-user .login-input {
+    background: transparent;
+}
+.login-wrap .login-unit-pwd .login-input {
+    background: transparent;
+}
+.login-wrap .login-unit-chk .login-input {
+    width: 134px;
+    background: transparent;
+}
+.login-wrap .login-unit .login-placeholder,
+.login-wrap .acc-unicode {
+    position: absolute;
+    color: #FFF;
+    font-family: arial;
+}
+.login-wrap .login-unit .login-placeholder {
+    top: 12px;
+    left: 27px;
+    cursor: text;
+}
+.login-wrap .acc-unicode {
+    top: 9px;
+    right: 5px;
+    font-size: 14px;
+}
+.login-wrap #vPic {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.login-wrap .btn-wrap {
+    padding: 10px 0 13px;
+}
+.login-wrap .login-submit {
+    float: left;
+    width: 90px;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 26px;
+    border: none;
+    background: url(../images/btn_login.png) no-repeat center top;
+    color: #0F0F0F;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+}
+.login-wrap .login-submit:hover {
+    background-position: 50% 100%;
+}
+.login-wrap .header-join {
+    float: right;
+    width: 90px;
+    height: 31px;
+    line-height: 31px;
+    margin-right: 26px;
+    background: url(../images/btn_joinus.png) no-repeat center top;
+    color: #0F0F0F;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.login-wrap .header-join:hover {
+    background-position: 50% 100%;
+}
+.login-wrap .forget-pw-wrap {
+    text-align: center;
+    clear: both;
+}
+.login-wrap .forget-pw {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+/*.login-wrap .forget-pw:hover {*/
+    /*color: #FFF14F;*/
+/*}*/
+
+/* 登入後 */
+
+}
+.is-login-title {
+    width: 80px;
+    height: 20px;
+    margin: 33px auto 36px;
+}
+.mem-info {
+    width: 209px;
+    line-height: 32px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 13px;
+}
+.mem-info strong {
+    color: #fff;
+}
+.ele-obalance-wrap {
+    color: #FFF;
+}
+.ele-obalance-wrap:hover {
+    color: #FFF000;
+}
+
+/* 加號展開 */
+.ele-obalance-item-wrap.ele-item-style-cover {
+    background: #FAFAFA;
+}
+.ele-obalance-item-wrap.ele-item-style-cover .ele-obalance-item {
+    border: 1px solid #EEE;
+}
+.ele-obalance-item-wrap.ele-item-style-cover .ele-obalance {
+    color: #444;
+}
+.ele-obalance-item-wrap.ele-item-style-cover .ele-balance-tool {
+    background: #F4F4F4;
+}
+.ele-obalance-item-wrap.ele-item-style-cover .ele-balance-tool a {
+    background: #555;
+    color: #FFF;
+}
+.ele-obalance-item-wrap.ele-item-style-cover .ele-balance-tool a:hover {
+    background: #000;
+}
+
+/* 會員選單 */
+.SU-Menual {
+    width: 209px;
+    margin: 0 auto;
+    color: #fff;
+}
+.SU-Menual li {
+    float: left;
+    margin: 6px 0;
+}
+.SU-Menual li a {
+    line-height: 20px;
+    padding: 0 2px;
+    color: inherit;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color .2s;
+    color: #fff;
+}
+.SU-Menual .logout-btn {
+    display: block;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    background: url('/cl/tpl/cornucopia/ver5/image/first_btn_logout.png') 50% 0 no-repeat;
+    margin: 16px auto 0;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.SU-Menual .logout-btn:hover {
+    background-position: 50% 100%;
+}
+
+/* 置頂登入區 */
+.loginFixed-wrap {
+    height: 54px;
+    margin-left: 36px;
+    color: #fff;
+    padding-top: 15px;
+    line-height: 20px;
+}
+.loginFixed-wrap a{
+    color: #fff;
+    font-size: 14px;
+}
+.first .loginFixed-wrap {
+    display: none;
+}
+.first .fixed .loginFixed-wrap {
+    display: block;
+}
+.loginFixed-wrap .login-unit {
+    position: relative;
+    float: left;
+    width: 165px;
+    height: 32px;
+    margin: 10px 0 10px 10px;
+    border: 1px solid #181818;
+    background-color: #000;
+}
+/*.loginFixed-wrap .login-unit-user {*/
+    /*background: #000 url('/cl/tpl/cornucopia/ver5/image/page_loginInput_icon01.png') 7px 8px no-repeat;*/
+/*}*/
+/*.loginFixed-wrap .login-unit-pwd {*/
+    /*background: #000 url('/cl/tpl/cornucopia/ver5/image/page_loginInput_icon02.png') 7px 9px no-repeat;*/
+/*}*/
+.loginFixed-wrap .login-input {
+    width: 165px;
+    height: 32px;
+    color: #FFF;
+    background-color: transparent;
+    text-indent: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.loginFixed-wrap .login-input:focus{
+    background-color: transparent;
+    border: 1px solid yellow;
+}
+.loginFixed-wrap .login-unit-chk .login-input {
+    text-indent: 7px;
+}
+.loginFixed-wrap .login-acc {
+    padding-right: 52px;
+    box-sizing: border-box;
+}
+.loginFixed-wrap .login-unit .login-placeholder,
+.loginFixed-wrap .acc-unicode {
+    position: absolute;
+    color: #FFF;
+    font-family: arial;
+}
+.loginFixed-wrap .login-unit .login-placeholder {
+    top: 10px;
+    left: 26px;
+    cursor: text;
+}
+.loginFixed-wrap .login-unit-chk .login-placeholder {
+    left: 8px;
+}
+.loginFixed-wrap .acc-unicode {
+    top: 8px;
+    right: 13px;
+    font-size: 14px;
+}
+.vertifyCode{
+    position: absolute;
+    right: 0;
+    top: 1px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.loginFixed-wrap #vPic2 {
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.loginFixed-wrap .login-submit {
+    float: left;
+    width: 110px;
+    height: 34px;
+    margin: 10px 0 0 10px;
+    border: none;
+    background: #353334;
+    color: red;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+}
+.loginFixed-wrap .login-submit:hover {
+    background-position: 50% 100%;
+}
+.loginFixed-wrap .header-join {
+    float: left;
+    width: 110px;
+    height: 34px;
+    line-height: 34px;
+    margin: 10px 0 0 10px;
+    background: #353334;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.loginFixed-wrap .header-join:hover {
+    background-position: 50% 100%;
+}
+.loginFixed-wrap .forget-pw {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #949494;
+    font-size: 14px;
+    text-decoration: none;
+}
+.loginFixed-wrap .forget-pw:hover {
+    color: #FFE581;
+}
+.en .loginFixed-wrap .forget-pw {
+    top: 10px;
+}
+
+/* 置頂 登入後 */
+.fixed-is-login-wrap {
+    height: 54px;
+    margin-left: 56px;
+}
+.first .fixed-is-login-wrap {
+    display: none;
+}
+.fixed .fixed-is-login-wrap {
+    display: block;
+}
+.fixed-mem-info {
+    float: left;
+    line-height: 54px;
+    color: #EDEDED;
+}
+.fixed-mem-info strong {
+    color: #F7CF52;
+}
+
+/* 置頂 會員選單 */
+.fixed-SU-Menual {
+    float: right;
+    color: #FFF;
+}
+.fixed-SU-Menual ul {
+    float: left;
+}
+.fixed-SU-Menual li {
+    float: left;
+    margin: 19px 0;
+}
+.fixed-SU-Menual li a {
+    padding: 0 4px;
+    color: inherit;
+    text-decoration: none;
+    transition: color .2s;
+}
+.fixed-SU-Menual li a:hover {
+    color: #FFF000;
+}
+.fixed-SU-Menual .logout-btn {
+    float: left;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    margin: 16px 2px 0 22px;
+    background: url('/cl/tpl/cornucopia/ver5/image/page_btn_logout.png') 50% 0 no-repeat;
+    color: #3C310C;
+    text-align: center;
+    text-decoration: none;
+}
+.fixed-SU-Menual .logout-btn:hover {
+    background-position: 50% 100%;
+}
+
+/* 最新消息 */
+.news-wrap-bg {
+    width: 100%;
+    min-width: 1000px;
+    background: url('/cl/tpl/cornucopia/ver5/image/first_news_bg_x.png') 0 0 repeat-x;
+}
+.first .news-wrap-bg {
+    position: absolute;
+    top: 516px;
+    z-index: 2;
+}
+.news-wrap,
+.news-item {
+    height: 40px;
+}
+.news-title,
+.news-item {
+    float: left;
+    line-height: 40px;
+}
+.news-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.news-title {
+    width: 100px;
+    padding-left: 27px;
+    color: #F2C559;
+    font-weight: bold;
+}
+.news-item {
+    width: 870px;
+    margin-left: 15px;
+    color: #FFF;
+}
+
+/* 首頁輪播 */
+.ad-flash-wrap {
+    position: relative;
+    height: 450px;
+    background-color: #0C0C0C;
+    overflow: hidden;
+}
+.ad-flash {
+    position: absolute;
+    left: 50%;
+    width: 1920px;
+    height: 450px;
+    margin-left: -960px;
+}
+.ele-slideshow-control-outwrap .ele-slideshow-control-wrap {
+    bottom: 60px;
+    width: 202px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    background: url('/cl/tpl/cornucopia/ver5/image/slider_ctrl_bg.png') 50% 0 no-repeat;
+    text-align: center;
+}
+.ele-slideshow-control-wrap .ele-slideshow-nav {
+    vertical-align: top;
+}
+.ele-slideshow-control-wrap .ele-slideshow-nav a {
+    width: 10px;
+    height: 10px;
+    margin: 0 7px;
+    background: transparent url('/cl/tpl/cornucopia/ver5/image/slider_ctrl.png') 50% 0 no-repeat;
+}
+.ele-slideshow-control-wrap .ele-slideshow-nav a.active,
+.ele-slideshow-control-wrap .ele-slideshow-nav a:hover {
+    background-color: transparent;
+    background-position: 50% 100%;
+}
+
+/* 首頁遊戲 */
+.first-game-wrap {
+    position: relative;
+    width: 1000px;
+    margin: 20px auto 10px;
+    overflow: hidden;
+}
+.first-game-wrap a {
+    margin: 0 13px 13px 0;
+}
+.first-game-wrap .ele-firstgame-1 {
+    margin-right: 520px;
+}
+.first-game-wrap .ele-firstgame-3 {
+    margin-right: 14px;
+}
+.first-game-wrap .ele-firstgame-2,
+.first-game-wrap .ele-firstgame-6 {
+    margin-right: 0;
+}
+
+/* 首頁彩金 */
+.first-jp-wrap,
+.first-jp-replace {
+    position: absolute;
+    top: 0;
+    left: 254px;
+    width: 493px;
+    height: 230px;
+}
+.first-jp-wrap .ele-jackpot-wrap {
+    margin: 108px auto 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 首頁遊戲下方連結 */
+.first-body-link {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 26px;
+}
+.first-body-link div,
+.first-body-link .btn-mobile {
+    height: 356px;
+    margin-top: 22px;
+}
+.first-body-link .live-link-wrap {
+    float: left;
+    width: 342px;
+}
+.first-body-link .live-link-wrap a {
+    float: left;
+    width: 88px;
+    height: 48px;
+    margin-top: 231px;
+}
+.first-body-link .live-link-wrap .btn-live-link01 {
+    margin-left: 36px;
+}
+.first-body-link .live-link-wrap .live-link:hover {
+    background-position: 50% 100%;
+}
+.login-title {
+    background: url("../images/first_log_title01.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.is-login-title {
+    background: url("../images/first_log_title02.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+/* 首頁彩金 */
+.first-jp-wrap {
+    background: url("../images/jp_bg.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.first-jp-replace {
+    background: url("../images/jp_replace.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+/* 首頁遊戲下方連結 */
+.first-body-link .live-link-wrap {
+    background: url("../images/first_live.png?v=ver54.110") 100% 0 no-repeat;
+}
+
+.first-body-link .live-link-wrap .btn-live-link01 {
+    background: url("../images/btn_livegame01.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.first-body-link .live-link-wrap .btn-live-link02 {
+    background: url("../images/btn_livegame02.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.first-body-link .live-link-wrap .btn-live-link03 {
+    background: url("../images/btn_livegame03.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.middle-link-wrap{
+    float: left;
+    width: 324px;
+    height: 356px;
+}
+
+.btn-sports-link {
+    background: url("../images/first_btn_sports.png?v=ver54.110") 50% 0 no-repeat;
+    display: block;
+    width: 342px;
+    height: 190px;
+}
+
+.first-body-link .middle-link-wrap .btn-lottery-link {
+    background: url("../images/first_btn_lottery.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.btn-mobile {
+    background: url("../images/first_btn_mobile.png?v=ver54.110") 50% 0 no-repeat;
+    display: block;
+    width: 294px;
+    height: 356px;
+    float: left;
+}
+
+/* 文案頁-側邊選單 */
+.sidemenu-header {
+    background: url("../images/sidebar_title.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.sidemenu-footer {
+    background: url("../images/sidebar_img.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+/* footer */
+#page-footer{
+    width: 1000px;
+    margin: 20px auto 0;
+    padding-bottom: 15px;
+}
+.footer-top-bg {
+    background: url("../images/footer_info.png?v=ver54.110") 100px 0 no-repeat;
+    height: 44px;
+}
+.footer-bottom{
+    text-align: center;
+    color: #ccc;
+}
+.article-menu{
+    line-height: 20px;
+    margin: 15px 0 8px;
+}
+
+.article-menu a{
+    color: #ccc;
+}
+
+.footer-online-service {
+    background: url("../images/footer_btn_service.png?v=ver54.110") left top no-repeat;
+}
+
+.footer-online-service:hover {
+    background-position: left bottom;
+}
+
+.footer-middle {
+    background: url("../images/footer_cooperation.png?v=ver54.110") 50% 0 no-repeat;
+}
+
+.footer-right {
+    background: url("../images/footer_mobile.png?v=ver54.110") 50% 0 no-repeat;
+
+.first-body-link .middle-link-wrap {
+    position: relative;
+    float: left;
+    width: 358px;
+}
+.first-body-link .middle-link-wrap .btn-sports-link {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 358px;
+    height: 166px;
+}
+.first-body-link .middle-link-wrap .btn-sports-link:hover {
+    background-position: 50% 100%;
+}
+.first-body-link .middle-link-wrap .btn-lottery-link {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 358px;
+    height: 190px;
+}
+.first-body-link .middle-link-wrap .btn-lottery-link:hover {
+    background-position: 50% 100%;
+}
+.first-body-link .btn-mobile {
+    float: right;
+    width: 300px;
+}
+.first-body-link .btn-mobile:hover {
+    background-position: 50% 100%;
+}
+
+/* 電子頁banner */
+.ele-gamebanner-wrap {
+    margin: 0 auto;
+}
+
+/* footer */
+#page-footer {
+    background: #000;
+    border-top: 1px solid #1E1E1E;
+}
+.footer-top {
+    padding: 19px 0 23px;
+    border-bottom: 1px solid #1E1E1E;
+    background: #121212;
+}
+.footer-top-bg {
+    width: 1000px;
+    height: 44px;
+    margin: 0 auto;
+}
+.footer-online-service {
+    float: right;
+    width: 126px;
+    height: 44px;
+}
+.footer-center {
+    height: 84px;
+    background: #121212;
+    border-bottom: 1px solid #2A2A2A;
+}
+.footer-support-wrap {
+    width: 1000px;
+    height: 84px;
+    margin: 0 auto;
+    background: url('/cl/tpl/cornucopia/ver5/image/footer_img.png') right center no-repeat;
+}
+.footer-bottom {
+    width: 1000px;
+    min-height: 76px;
+    margin: 16px auto 0;
+    color: #979797;
+}
+.article-menu {
+    text-align: center;
+}
+.article-menu a {
+    padding: 0 12px;
+    color: inherit;
+    text-decoration: none;
+}
+.article-menu a:hover {
+    color: #FFFF66 !important;
+}
+.article-menu span {
+    color: #323232;
+}
+.copyright {
+    margin-top: 10px;
+}
+.copyright,
+.footer-info {
+    line-height: 25px;
+    color: #555555;
+    text-align: center;
+}
+#bblogo,
+#browser-logo {
+    float: left;
+    margin-top: 30px;
+}
+#bblogo {
+    margin-right: 4px;
+}
+#bblogo img,
+#browser-logo img {
+    display: block;
+}
+
+/* 文案區塊 */
+.at-wrap {
+    background: url('/cl/tpl/cornucopia/ver5/image/container_article_y.png') 50% 0 repeat-y;
+}
+.at-wrap:before,
+.at-wrap:after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 1000px;
+    height: 2px;
+}
+.at-wrap:before {
+    background: url('/cl/tpl/cornucopia/ver5/image/container_article_top.png') 50% 0 no-repeat;
+}
+.at-wrap:after {
+    background: url('/cl/tpl/cornucopia/ver5/image/container_article_bottom.png') 50% 0 no-repeat;
+}
+#page-sidebar {
+    float: left;
+    width: 234px;
+}
+#page-right {
+    float: right;
+    padding: 20px 36px;
+}
+#page-right,
+#page-right iframe {
+    width: 684px;
+}
+.joinagent #page-right,
+.joinmember #page-right {
+    padding: 0;
+}
+.joinagent #page-right,
+.joinagent #page-right iframe,
+.joinmember #page-right,
+.joinmember #page-right iframe {
+    width: 756px;
+}
+
+/* 文案頁-側邊選單 */
+.sidemenu-header {
+    width: 206px;
+    height: 43px;
+    margin: 29px auto 30px;
+}
+.sidemenu-body a {
+    display: block;
+    width: 95px;
+    height: 44px;
+    line-height: 43px;
+    padding: 0 58px 0 81px;
+    background: url('/cl/tpl/cornucopia/ver5/image/sidebar_icon.png') 50% 0 no-repeat;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sidemenu-body a:hover {
+    background-position: 50% 100%;
+    background-color: #171717;
+}
+.sidemenu-footer {
+    width: 185px;
+    height: 169px;
+    margin: 15px auto 97px;
+}
+
+/* 文案標題 */
+#direction .case-article-title,
+#direction p {
+    color: #949494;
+}
+
+/* 頁籤 */
+#direction ul.mtab-menual {
+    list-style: none;
+    padding-left: 0;
+}
+#direction ul.mtab-menual li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 81px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 5px;
+    background: url('/cl/tpl/cornucopia/ver5/image/promotions_nav.png') 50% 0 no-repeat;
+    color: #E4E4E4;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color .4s;
+}
+#direction ul.mtab-menual li:hover,
+#direction ul.mtab-menual li.mtab {
+    background-position: 50% 100%;
+    color: #FFF;
+}
+
+/*優惠活動*/
+#direction #PT-switcher-wrap {
+    width: 1000px;
+    margin: 0;
+}
+#direction #MemberExclusive_area {
+    min-height: 800px;
+    margin: 0 auto;
+    padding: 10px 9px 0;
+    border: 1px solid #1E1E1E;
+    background-color: #060303;
+}
+/* 優惠活動-各活動間距 */
+#direction #MemberExclusive_area .MemberExclusive {
+    margin-bottom: 10px;
+}
+
+/*共用頁面*/
+.Tpl-table01 {
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    color: #000;
+    font-size: 12px;
+}
+table .Tpl-title01 th {
+    background-color: #DDD;
+    height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+#Tpl-user-acc span {
+    color: #0000FF;
+    line-height: 20px;
+}
+.Tpl-table01 th, .Tpl-table01 td {
+    border: 1px solid #CCC;
+    height: 22px;
+}
+tr.Tpl-trcolor1 {
+    background: #FFF;
+}
+tr.Tpl-trcolor2 {
+    background: #EEE;
+}
+tr.Tpl-trmouseenter {
+    background: #DEF;
+}
+#Tpl-memdata .Tpl-table01 th,
+#Tpl-memdata .Tpl-table01 td.Tpl-left {
+    text-align: center;
+}
+#Tpl-memdata .Tpl-table01 td.Tpl-right {
+    text-align: left;
+}
+.Tpl-blue {
+    color: #00F;
+}
+
+.ele-lang-wrap {
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.ele-lang-option {
+    width: 22px;
+    height: 16px;
+    vertical-align: top;
+    /**margin-left: 4px;*/
+    /*background: url('/cl/tpl/template{{ asset('/web/images') }}/element/lang_rect_c.png') no-repeat;*/
+    display: inline-block;
+    /**display: inline;*/
+    /**zoom: 1;*/
+}
+
+.ele-lang-zh-cn {
+    background-position: 0 -40px;
+}
+
+.ele-lang-en {
+    background-position: 0 -80px;
+}
